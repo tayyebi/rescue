@@ -6,8 +6,8 @@
 .gitalk-container {
     margin: 10px auto;
     max-width: 840px;
-    padding-left: 16px;
     padding-right: 16px;
+    padding-left: 16px;
 }
 
 .gitalk-container .markdown-body {
@@ -78,7 +78,7 @@
 }
 
 .gitalk-container .gt-container .gt-ico-text {
-    margin-left: 0.3125em;
+    margin-right: 0.3125em;
 }
 
 .gitalk-container .gt-container .gt-ico-github {
@@ -103,7 +103,7 @@
     width: 0.75em;
     height: 0.75em;
     margin-top: -0.1875em;
-    margin-left: -0.375em;
+    margin-right: -0.375em;
     border-radius: 50%;
     -webkit-animation: gt-kf-rotate 0.6s linear infinite;
     animation: gt-kf-rotate 0.6s linear infinite;
@@ -125,9 +125,9 @@
     position: absolute;
     display: block;
     top: 0;
-    left: 50%;
+    right: 50%;
     margin-top: -0.1875em;
-    margin-left: -0.1875em;
+    margin-right: -0.1875em;
     width: 0.375em;
     height: 0.375em;
     border-radius: 50%;
@@ -191,7 +191,7 @@
 }
 
 .gitalk-container .gt-container .gt-btn-loading {
-    margin-left: 0.5em;
+    margin-right: 0.5em;
     display: inline-block;
     width: 0.75em;
     height: 1em;
@@ -277,7 +277,7 @@
 }
 
 .gitalk-container .gt-container .gt-user {
-    float: right;
+    float: left;
     margin: 0;
     font-size: 92%;
 }
@@ -286,7 +286,7 @@
     width: 16px;
     height: 16px;
     vertical-align: top;
-    margin-right: 0.5em;
+    margin-left: 0.5em;
 }
 
 .gitalk-container .gt-container .gt-user-inner {
@@ -302,7 +302,7 @@
 }
 
 .gitalk-container .gt-container .gt-version {
-    margin-left: 0.375em;
+    margin-right: 0.375em;
 }
 
 .gitalk-container .gt-container .gt-copyright {
@@ -313,7 +313,7 @@
 
 .gitalk-container .gt-container .gt-popup {
     position: absolute;
-    right: 0;
+    left: 0;
     top: 2.375em;
     background-color: var(--color-canvas-overlay);
     display: inline-block;
@@ -336,7 +336,7 @@
     height: 0.25em;
     background: var(--color-fg-default);;
     position: absolute;
-    left: 0.5em;
+    right: 0.5em;
     top: 0.4375em;
 }
 
@@ -350,7 +350,7 @@
     -webkit-box-flex: 1;
     -ms-flex: 1;
     flex: 1;
-    margin-left: 1.25em;
+    margin-right: 1.25em;
     border: 1px solid var(--color-border-default);
     border-radius: 6px;
     padding: 8px;
@@ -358,7 +358,7 @@
 
 @media (max-width: 479px) {
     .gitalk-container .gt-container .gt-header-comment {
-        margin-left: 0.875em;
+        margin-right: 0.875em;
     }
 }
 
@@ -426,8 +426,8 @@
 }
 
 .gitalk-container .gt-container .gt-header-controls .gt-btn {
-    float: right;
-    margin-left: 1.25em;
+    float: left;
+    margin-right: 1.25em;
 }
 
 @media (max-width: 479px) {
@@ -442,8 +442,8 @@
     content: '';
     position: fixed;
     bottom: 100%;
-    left: 0;
     right: 0;
+    left: 0;
     top: 0;
     opacity: 0;
 }
@@ -455,8 +455,8 @@
     content: '';
     position: fixed;
     bottom: 0;
-    left: 0;
     right: 0;
+    left: 0;
     top: 0;
     opacity: 0.6;
     -webkit-transition: opacity 0.3s, bottom 0s;
@@ -490,7 +490,7 @@
     -webkit-box-flex: 1;
     -ms-flex: 1;
     flex: 1;
-    margin-left: 1.25em;
+    margin-right: 1.25em;
     background-color: var(--color-border-default);
     overflow: auto;
     -webkit-transition: all ease 0.25s;
@@ -499,7 +499,7 @@
 
 @media (max-width: 479px) {
     .gitalk-container .gt-container .gt-comment-content {
-        margin-left: 0.875em;
+        margin-right: 0.875em;
     }
 }
 
@@ -508,8 +508,8 @@
     display: flex;
     background-color: var(--color-canvas-subtle);
     border-bottom: 1px solid var(--color-border-default);
-    padding-right: 16px;
     padding-left: 16px;
+    padding-right: 16px;
     height: 40px;
     align-items: center;
 }
@@ -543,12 +543,12 @@
 }
 
 .gitalk-container .gt-container .gt-comment-text {
-    margin-left: 0.5em;
+    margin-right: 0.5em;
     color: var(--color-fg-muted) !important;
 }
 
 .gitalk-container .gt-container .gt-comment-date {
-    margin-left: 0.5em;
+    margin-right: 0.5em;
     color: var(--color-fg-muted) !important;
 }
 
@@ -566,12 +566,12 @@
 }
 
 .gitalk-container .gt-container .gt-comment-like {
-    right: 38px;
+    left: 38px;
 }
 
 .gitalk-container .gt-container .gt-comment-edit,
 .gitalk-container .gt-container .gt-comment-reply {
-    right: 16px;
+    left: 16px;
 }
 
 .gitalk-container .gt-container .gt-comment-body {
@@ -606,7 +606,7 @@
     padding: 0 15px;
     margin: 15px 0;
     color: #586069;
-    border-left: 4px solid #dfe2e5;
+    border-right: 4px solid #dfe2e5;
 }
 
 .gitalk-container .gt-container .gt-comment-body .email-hidden-reply.expanded {

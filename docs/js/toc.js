@@ -31,7 +31,7 @@ function getToc() {
         a.classList.add("filter-item", "SelectMenu-item", "ws-normal", "wb-break-word", "line-clamp-2", "py-1", "toc-item");
         a.href = `#${h.id}`;
         a.innerText = h.innerText;
-        a.style.paddingLeft = `${size * 12}px`;
+        a.style.paddingright = `${size * 12}px`;
         toc_list.appendChild(a);
     }
 }

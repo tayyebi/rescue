@@ -4,14 +4,15 @@ html {
 
 body {
   margin: 0;
+  direction: rtl;
 }
 
 .Header {
   display: flex;
   align-items: center;
   flex-wrap: nowrap;
-  padding-left: 32px!important;
   padding-right: 32px!important;
+  padding-left: 32px!important;
   z-index: 32;
   padding: 16px;
   font-size: 14px;
@@ -29,7 +30,7 @@ body {
 }
 
 .Header-item {
-  margin-right: 16px;
+  margin-left: 16px;
 }
 
 .octicon {
@@ -98,7 +99,7 @@ body {
 
 .switch-theme {
   top: -2px;
-  left: -2px;
+  right: -2px;
   width: 28px;
   height: 28px;
   border-radius: 50%;
@@ -158,25 +159,25 @@ body {
 }
 
 #table-of-contents > nav ul > li {
-  margin-left: 1em;
+  margin-right: 1em;
   font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;
 }
 
 #table-of-contents > nav > ul > li {
-  margin-left: 0;
+  margin-right: 0;
 }
 
 @media (max-width: 768px) {
   .Header {
-    padding-left: 24px!important;
     padding-right: 24px!important;
+    padding-left: 24px!important;
   }
 }
 
 @media (max-width: 480px) {
   .Header {
-    padding-left: 16px!important;
     padding-right: 16px!important;
+    padding-left: 16px!important;
   }
   .mobile-none {
     display: none!important;

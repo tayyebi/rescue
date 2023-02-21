@@ -17,13 +17,13 @@ pygmentsUseClasses = true
   instagram = "tyyinet"
   # tumblr = "MeiK2333"
   # email = "smile@tyyi.net"
-  url = "https://p30emdad.ir/post"
+  # url = "https://p30emdad.ir"
   keywords = "رایانه, امداد, فوری"
   rss = true
   lastmod = true
   userStatusEmoji = "🚑"
   favicon = "/images/github.png"
-  location = "Hamedan"
+  location = "همدان"
 
   enableGitalk = false
   [params.gitalk]

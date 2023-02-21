@@ -82,13 +82,13 @@ function monthly(year, month, posts) {
       <a href="${post.link}">${post.title}</a>
     </div>
     <time  title="This post was made on ${months[post.date.getMonth()]} ${post.date.getDate()}"
-      class="col-2 text-right f6 text-gray-light pt-1">
+      class="col-2 text-left f6 text-gray-light pt-1">
       ${months[post.date.getMonth()]} ${post.date.getDate()}
     </time>
   </li>`;
   }
   return `
-  <div class="contribution-activity-listing float-left col-12 col-lg-10">
+  <div class="contribution-activity-listing float-right col-12 col-lg-10">
     <div class="width-full pb-4">
       <h3 class="h6 pr-2 py-1 border-bottom mb-3" style="height: 14px;">
         <span class="color-bg-canvas pl-2 pr-3">${monthsFull[month]} <span
@@ -106,17 +106,17 @@ function monthly(year, month, posts) {
         <div class="TimelineItem-body ">
           <details class="Details-element details-reset" open>
             <summary role="button" class="btn-link f4 muted-link no-underline lh-condensed width-full">
-              <span class="color-text-primary ws-normal text-left">
+              <span class="color-text-primary ws-normal text-right">
                 Created ${monthPosts.length} post${monthPosts.length > 1 ? 's' : ''}
               </span>
-              <span class="d-inline-block float-right color-icon-secondary">
-                <span class="Details-content--open float-right">
+              <span class="d-inline-block float-left color-icon-secondary">
+                <span class="Details-content--open float-left">
                   <svg class="octicon octicon-fold" viewBox="0 0 16 16" version="1.1" width="16" height="16">
                     <path fill-rule="evenodd"
                       d="M10.896 2H8.75V.75a.75.75 0 00-1.5 0V2H5.104a.25.25 0 00-.177.427l2.896 2.896a.25.25 0 00.354 0l2.896-2.896A.25.25 0 0010.896 2zM8.75 15.25a.75.75 0 01-1.5 0V14H5.104a.25.25 0 01-.177-.427l2.896-2.896a.25.25 0 01.354 0l2.896 2.896a.25.25 0 01-.177.427H8.75v1.25zm-6.5-6.5a.75.75 0 000-1.5h-.5a.75.75 0 000 1.5h.5zM6 8a.75.75 0 01-.75.75h-.5a.75.75 0 010-1.5h.5A.75.75 0 016 8zm2.25.75a.75.75 0 000-1.5h-.5a.75.75 0 000 1.5h.5zM12 8a.75.75 0 01-.75.75h-.5a.75.75 0 010-1.5h.5A.75.75 0 0112 8zm2.25.75a.75.75 0 000-1.5h-.5a.75.75 0 000 1.5h.5z">
                     </path>
                   </svg></span>
-                <span class="Details-content--closed float-right"><svg class="octicon octicon-unfold"
+                <span class="Details-content--closed float-left"><svg class="octicon octicon-unfold"
                     viewBox="0 0 16 16" version="1.1" width="16" height="16">
                     <path fill-rule="evenodd"
                       d="M8.177.677l2.896 2.896a.25.25 0 01-.177.427H8.75v1.25a.75.75 0 01-1.5 0V4H5.104a.25.25 0 01-.177-.427L7.823.677a.25.25 0 01.354 0zM7.25 10.75a.75.75 0 011.5 0V12h2.146a.25.25 0 01.177.427l-2.896 2.896a.25.25 0 01-.354 0l-2.896-2.896A.25.25 0 015.104 12H7.25v-1.25zm-5-2a.75.75 0 000-1.5h-.5a.75.75 0 000 1.5h.5zM6 8a.75.75 0 01-.75.75h-.5a.75.75 0 010-1.5h.5A.75.75 0 016 8zm2.25.75a.75.75 0 000-1.5h-.5a.75.75 0 000 1.5h.5zM12 8a.75.75 0 01-.75.75h-.5a.75.75 0 010-1.5h.5A.75.75 0 0112 8zm2.25.75a.75.75 0 000-1.5h-.5a.75.75 0 000 1.5h.5z">
@@ -269,7 +269,7 @@ function svgTip(elem, count, dateStr) {
   svgElem.style.display = 'block';
   const tipRect = svgElem.getBoundingClientRect();
   svgElem.style.top = `${rect.top - 50}px`;
-  svgElem.style.left = `${rect.left - tipRect.width / 2 + rect.width / 2}px`;
+  svgElem.style.right = `${rect.right - tipRect.width / 2 + rect.width / 2}px`;
 }
 
 function hideTip() {
@@ -283,15 +283,15 @@ function getCoords(elem) {
   const docEl = document.documentElement;
 
   const scrollTop = window.pageYOffset || docEl.scrollTop || body.scrollTop;
-  const scrollLeft = window.pageXOffset || docEl.scrollLeft || body.scrollLeft;
+  const scrollright = window.pageXOffset || docEl.scrollright || body.scrollright;
 
   const clientTop = docEl.clientTop || body.clientTop || 0;
-  const clientLeft = docEl.clientLeft || body.clientLeft || 0;
+  const clientright = docEl.clientright || body.clientright || 0;
 
   const top = box.top + scrollTop - clientTop;
-  const left = box.left + scrollLeft - clientLeft;
+  const right = box.right + scrollright - clientright;
 
-  return { top, left, width: box.width, height: box.height };
+  return { top, right, width: box.width, height: box.height };
 }
 
 function relativeTime(dateStr) {
