@@ -9,20 +9,21 @@ pygmentsUseClasses = true
 [params]
   author = "p30emdad"
   description = "پاسخ به پرسش‌های فوری شما در زمینه‌ی کامپیوتر، موبایل و اینترنت"
-  github = "tayyebi/rescue"
+  # github = "tayyebi"
   # facebook = "MeiK2333"
   # twitter = "MeiK2333"
   # linkedin = "mohammadrezatayyebi"
+  phone = "0 921 0 115 404"
   instagram = "tyyinet"
   tumblr = "MeiK2333"
-  email = "smile@tyyi.net"
+  # email = "smile@tyyi.net"
   url = "https://p30emdad.ir/post"
   keywords = "رایانه, امداد, فوری"
   rss = true
   lastmod = true
   userStatusEmoji = "🚑"
   favicon = "/images/github.png"
-  location = "Iran"
+  location = "Hamedan"
 
   enableGitalk = false
   [params.gitalk]
